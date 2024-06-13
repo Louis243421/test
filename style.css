@@ -59,6 +59,10 @@ footer{
     padding: 10px 0;
     color: #fff;
 }
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
 .img {
   background: url("img.jpeg") no-repeat;
   width: 100%;
