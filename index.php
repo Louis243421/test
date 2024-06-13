@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
-    <?php include 'menu.html'; ?>
+    <?php include 'menu.tml'; ?>
     <div class="img"></div>
     <div class="center">
       <div class="title">Vieni a scoprire i nostri film</div>
