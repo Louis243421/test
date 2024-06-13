@@ -30,9 +30,12 @@ if ($result->num_rows > 0) {
 }
 
 }
-
-ricerca("nome","registi");
+print("I nostri film: ");
 ricerca("titolo","film");
+print("<br>");
+print("I nostri registi: ");
+ricerca("nome","registi");
+
 
 $conn->close();
 ?>

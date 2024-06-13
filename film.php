@@ -14,7 +14,7 @@
         <div class="img"></div>
         <div class="center">
             <div class="title"></div>
-            <div id="sub_title"><h3>Benvenuti su Gino's Studios</h3><br>
+            <div id="sub_title">
             <?php include 'db.php'; ?> 
             <div class="btns">
                 <button>Learn More</button>
