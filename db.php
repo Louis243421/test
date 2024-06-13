@@ -23,11 +23,24 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // Output dei dati di ogni riga
     while($row = $result->fetch_assoc()) {
-        echo "titolo: " . $row["titolo"]. "<br>";
+        echo  $row["titolo"]. "<br>";
     }
 } else {
     echo "0 risultati";
 }
+
+$sql = "SELECT nome FROM registi";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // Output dei dati di ogni riga
+    while($row = $result->fetch_assoc()) {
+        echo  $row["nome"]. "<br>";
+    }
+} else {
+    echo "0 risultati";
+}
+
 $conn->close();
 ?>
 
