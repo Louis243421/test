@@ -14,10 +14,10 @@
         <div class="img"></div>
         <div class="center">
             <div class="title"></div>
-            <div id="sub_title"><h3>Contattaci!!!</h3><br>
+            <div id="sub_title"><h2>Contattaci!!!</h2><br><br>
             Contatta la nostra redazione al numero: +39 55555555555 <br>
-            Mostra il tuo talento! <br>
-            <h4>Cosa aspetti!!!</h4>
+            Mostra il tuo talento! <br><br>
+            <h1>Cosa aspetti!!!</h1>
             </div>
         </div>
     </div>
