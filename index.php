@@ -21,7 +21,6 @@
                 </div>
             <div class="btns">
                 <button onclick="window.location.href='about.php'">Learn More</button>
-                <button>Subscribe</button>
             </div>
         </div>
     </div>
