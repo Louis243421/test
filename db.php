@@ -32,6 +32,7 @@ if ($result->num_rows > 0) {
 }
 
 ricerca("nome","registi");
+ricerca("titolo","film");
 
 $conn->close();
 ?>
