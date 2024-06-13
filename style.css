@@ -54,7 +54,7 @@ nav .menu {
   color: black;
 }
 footer{
-    background-color: rgba(255, 255, 255, 0.5); /* Trasparente bianco */
+    background-color: #1b1b1b;
     text-align: center;
     padding: 10px 0;
 }
