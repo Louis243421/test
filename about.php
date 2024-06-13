@@ -14,7 +14,7 @@
         <div class="img"></div>
         <div class="center">
             <div class="title"></div>
-            <div class="sub_title">Benvenuti su Gino's Studios
+            <div id="sub_title">Benvenuti su Gino's Studios
 Scopri un mondo di emozioni e avventure con Gino's Studios, il tuo portale di riferimento per film di alta qualit?. Siamo appassionati di cinema e dediti a offrire una vasta selezione di film che spaziano dai grandi classici ai pi? recenti successi di Hollywood, fino alle gemme indipendenti di tutto il mondo.
 Cosa offriamo:
 Catalogo Diversificato: Esplora un'ampia gamma di generi, dai thriller mozzafiato alle commedie spassose, dai drammi intensi ai film d'animazione per tutta la famiglia.
