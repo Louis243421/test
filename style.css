@@ -54,8 +54,9 @@ nav .menu {
   color: black;
 }
 footer{
-  background-color:rgba(255, 255, 255, 0.5);
-    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Trasparente bianco */
+    text-align: center;
+    padding: 10px 0;
 }
 .img {
   background: url("img.jpeg") no-repeat;
@@ -120,3 +121,17 @@ footer{
   background: white;
   color: black;
 }
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+ }
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
