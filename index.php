@@ -14,9 +14,11 @@
         <div class="img"></div>
         <div class="center">
             <div class="title">Vieni a scoprire i nostri film</div>
-            <div id="titoloI" class="sub_title">Indipendentemente da quale sia il tuo genere preferito o se sei alla ricerca di nuove ispirazioni, <br>
+            <div class="sub_title">
+                <h4>Indipendentemente da quale sia il tuo genere preferito o se sei alla ricerca di nuove ispirazioni, <br>
                 Gino's Studios e' qui per soddisfare la tua sete di racconti straordinari. <br>
-                 Preparati a lasciarti trasportare dalla magia del cinema con Gino's Studios.</div>
+                 Preparati a lasciarti trasportare dalla magia del cinema con Gino's Studios.</h4>
+                </div>
             <div class="btns">
                 <button>Learn More</button>
                 <button>Subscribe</button>
