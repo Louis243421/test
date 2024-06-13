@@ -15,20 +15,6 @@ if ($conn->connect_error) {
     die("Connessione fallita: " . $conn->connect_error);
 }
 
-// Esempio di query SQL per recuperare i dati
-$sql = "SELECT titolo FROM film";
-$result = $conn->query($sql);
-
-// Controlla se ci sono risultati
-if ($result->num_rows > 0) {
-    // Output dei dati di ogni riga
-    while($row = $result->fetch_assoc()) {
-        echo  $row["titolo"]. "<br>";
-    }
-} else {
-    echo "0 risultati";
-}
-
 function ricerca($cosa,$dove){
     global $conn;
     $sql = "SELECT $cosa FROM $dove";
@@ -37,7 +23,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // Output dei dati di ogni riga
     while($row = $result->fetch_assoc()) {
-        echo  $row["nome"]. "<br>";
+        echo  $row["$cosa"]. "<br>";
     }
 } else {
     echo "0 risultati";
