@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
+    <?php include 'menu.html'; ?>
     <div class="img"></div>
     <div class="center">
       <div class="title">Vieni a scoprire i nostri film</div>
@@ -19,7 +20,7 @@
         <button>Subscribe</button>
       </div>
     </div>
-    <?php include 'menu.html'; ?>
+    <?php include 'footer.html'; ?>
 
     
   </body>
