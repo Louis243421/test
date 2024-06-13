@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 }
 
 // Esempio di query SQL per recuperare i dati
-$sql = "SELECT id, nome, descrizione FROM tabella";
+$sql = "SELECT titolo FROM film";
 $result = $conn->query($sql);
 
 // Controlla se ci sono risultati
