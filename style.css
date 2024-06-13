@@ -55,6 +55,7 @@ nav .menu {
 }
 footer{
   background-color: #ffffff;
+  margin: 0px 600px 0px 600px;
 }
 .img {
   background: url("img.jpeg") no-repeat;
