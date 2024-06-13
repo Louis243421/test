@@ -18,7 +18,7 @@
                 <h4>Ci dispiace, pagina non trovata! <br></h4>
                 </div>
             <div class="btns">
-                <button onclick="window.location.href='about.php'">Learn More</button>
+                <button onclick="window.location.href='/'">Return to Home</button>
             </div>
         </div>
     </div>
