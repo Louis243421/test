@@ -34,10 +34,6 @@ troverai sempre qualcosa che ti appassioner?.<br>
 Unisciti a noi su Gino's Studios e lasciati trasportare dal potere del cinema!<br>
 Questa descrizione mira a trasmettere la passione e la variet? di contenuti che Gino's Studios offre,<br>
 invitando i visitatori a esplorare e a diventare parte della community.</div>
-            <div class="btns">
-                <button>Learn More</button>
-                <button>Subscribe</button>
-            </div>
         </div>
     </div>
     <?php include 'footer.html'; ?>

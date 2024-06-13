@@ -16,10 +16,6 @@
             <div class="title"></div>
             <div id="sub_title">
             <?php include 'db.php'; ?> 
-            <div class="btns">
-                <button>Learn More</button>
-                <button>Subscribe</button>
-            </div>
         </div>
     </div>
     <?php include 'footer.html'; ?>
