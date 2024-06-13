@@ -29,7 +29,9 @@ if ($result->num_rows > 0) {
     echo "0 risultati";
 }
 
-$sql = "SELECT nome FROM registi";
+function ricerca($cosa,$dove){
+    global $conn;
+    $sql = "SELECT $cosa FROM $dove";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
@@ -40,6 +42,10 @@ if ($result->num_rows > 0) {
 } else {
     echo "0 risultati";
 }
+
+}
+
+ricerca("nome","registi");
 
 $conn->close();
 ?>
