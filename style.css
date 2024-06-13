@@ -141,6 +141,10 @@ body, html {
   align-items: center;
  }
  #sub_title{
+  font-size: 135%;
+  color: #fff;
+ }
+ h3{
   font-size: 150%;
   color: #fff;
  }
