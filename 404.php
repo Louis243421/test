@@ -9,19 +9,7 @@
     
 </head>
 <body>
- <nav>
-    <div class="menu">
-      <div class="logo">
-        <a href="/">Gino's Studios</a>
-      </div>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="about.php">About</a></li>
-        <li><a href="film.php">Films</a></li>
-        <li><a href="contatti.php">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+<?php include 'menu.html'; ?>
     <div class="content">
         <div class="img"></div>
         <div class="center">
@@ -35,8 +23,6 @@
         </div>
     </div>
 
-	<footer>
-    <p>Created by Improta Luigi&trade;</p>
-  </footer>
+    <?php include 'footer.html'; ?>
 </body>
 </html>
