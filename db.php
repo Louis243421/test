@@ -30,10 +30,10 @@ if ($result->num_rows > 0) {
 }
 
 }
-print("<strong style='font-size: 20px;'>I nostri film:</strong>");
+print("<strong style='font-size: 50px;'>I nostri film:</strong> <br>");
 ricerca("titolo","film");
 print("<br>");
-print("<strong style='font-size: 20px;'>I nostri registi:</strong>");
+print("<strong style='font-size: 50px;'>I nostri registi:</strong> <br>");
 ricerca("nome","registi");
 
 
