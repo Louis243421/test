@@ -19,9 +19,8 @@
         <button>Learn More</button>
         <button>Subscribe</button>
       </div>
-      <?php include 'footer.html'; ?>
     </div>
-    
+    <?php include 'footer.html'; ?>
 
     
   </body>
