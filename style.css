@@ -57,6 +57,7 @@ footer{
     background-color: #1b1b1b;
     text-align: center;
     padding: 10px 0;
+    color: #fff;
 }
 .img {
   background: url("img.jpeg") no-repeat;
