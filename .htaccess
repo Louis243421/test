@@ -27,3 +27,5 @@ RewriteRule ^ /%1 [NC,L,R]
 RewriteCond %{REQUEST_FILENAME}.htm -f
 
 RewriteRule ^ %{REQUEST_URI}.htm [NC,L]
+
+ErrorDocument 404 /404.php
