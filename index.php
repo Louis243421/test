@@ -20,7 +20,7 @@
                  Preparati a lasciarti trasportare dalla magia del cinema con Gino's Studios.</h4>
                 </div>
             <div class="btns">
-                <button>Learn More</button>
+                <button onclick="window.location.href='about.php'">Learn More</button>
                 <button>Subscribe</button>
             </div>
         </div>
