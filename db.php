@@ -23,7 +23,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // Output dei dati di ogni riga
     while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"]. " - Nome: " . $row["nome"]. " - Descrizione: " . $row["descrizione"]. "<br>";
+        echo "titolo: " . $row["titolo"]. "<br>";
     }
 } else {
     echo "0 risultati";
