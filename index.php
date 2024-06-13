@@ -20,5 +20,10 @@
         <button>Subscribe</button>
       </div>
     </div>
+
+    <footer>
+    <p >Author: Hege Refsnes<br>
+    <a href="mailto:hege@example.com">hege@example.com</a></p>
+  </footer>
   </body>
 </html>
