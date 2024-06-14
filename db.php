@@ -10,6 +10,11 @@ $dbname = "film";
 // Crea la connessione
 $conn = new mysqli($servername, $username, $password, $dbname);
 
+$titolo = $conn->real_escape_string($_POST['titolo']);
+$anno = $conn->real_escape_string($_POST['anno']);
+$genere = $conn->real_escape_string($_POST['genere']);
+
+
 function inserimento($titolo,$anno,$genere)
 {
     global $conn;
