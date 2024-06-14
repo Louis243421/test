@@ -31,6 +31,7 @@ if ($result->num_rows > 0) {
 
 }
 
-
+function insert_db(){
+}
 ?>
 
