@@ -33,7 +33,7 @@ function inserimento($titolo,$anno,$genere)
 }*/
 
 echo "<pre>";
-print_r($_POST);
+print_r($_REQUEST);
 echo "</pre>";
 
 
