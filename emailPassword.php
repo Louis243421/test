@@ -11,11 +11,10 @@
             var EmailCorretta = "luigi.improta2006@gmail.com";
             var EmailInserita = document.getElementById("email").value;
 
-            var PasswordCorretta = "GinoPaoli";
+            var PasswordCorretta = "Pianoforte22";
             var PasswordInserita = document.getElementById("password").value;
 
             if (EmailCorretta == EmailInserita && PasswordCorretta == PasswordInserita) {
-                alert("I dati inseriti sono corretti!!");
                 window.location.href = "admin.php"; // Redirigi alla pagina HTML
             } else if (EmailInserita == "" || PasswordInserita == "") {
                 alert("Mancano dei dati");
@@ -26,6 +25,8 @@
     </script>
 </head>
 <body>
+
+
     <form id="loginForm" onsubmit="inviaDati(event);">
         <p>
             <label for="email">Email:</label>

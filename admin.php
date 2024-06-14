@@ -17,7 +17,7 @@
         function redirectOnce() {
             // Controlla se ? gi? avvenuto il reindirizzamento
             if (!localStorage.getItem('redirected')) {
-                window.location.href = "emailPassword.html"; // URL della pagina a cui vuoi reindirizzare
+                window.location.href = "emailPassword.php"; // URL della pagina a cui vuoi reindirizzare
                 localStorage.setItem('redirected', 'true'); // Imposta il flag per indicare che ? gi? stato reindirizzato
             }
         }
