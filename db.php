@@ -17,6 +17,8 @@ $genere =$_REQUEST['genere'];
 
 
     //inserimento film
+
+    if($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['action']) && $_GET['action'] == 'inserisci_film') {
     $sql = "INSERT INTO film (titolo, anno_uscita, genere) VALUES('$titolo','$anno', '$genere')";
 
     if($conn->query($sql) === true){
@@ -30,10 +32,13 @@ $genere =$_REQUEST['genere'];
         die("Connessione fallita: " . $conn->connect_error);
     }
 
+}
+
 
     //inserimento attori
-    $nomeA = $_REQUEST['nomeA'];
-    $annoA =$_REQUEST['annoA'];
+    if($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['action']) && $_GET['action'] == 'inserisci_attore') {
+        $nomeA = $_GET['nomeA'];
+    $annoA =$_GET['annoA'];
 
     $sql = "INSERT INTO attori (nome, data_nascita) VALUES('$nomeA','$annoA')";
 
@@ -48,8 +53,10 @@ $genere =$_REQUEST['genere'];
         die("Connessione fallita: " . $conn->connect_error);
     }
 
+    }
+    
     //inserimento registi
-
+    if($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['action']) && $_GET['action'] == 'inserisci_regista') {
     $nomeR = $_REQUEST['nomeR'];
     $annoR =$_REQUEST['annoR'];
 
@@ -65,6 +72,8 @@ $genere =$_REQUEST['genere'];
     if ($conn->connect_error) {
         die("Connessione fallita: " . $conn->connect_error);
     }
+
+}
 
 
 
@@ -90,8 +99,5 @@ if ($result->num_rows > 0) {
 
 }
 
-function insert_db(){
-
-}
 ?>
 

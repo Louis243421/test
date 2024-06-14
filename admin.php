@@ -22,6 +22,7 @@
             Inserisci qui i nuovi elementi:
             </div>
             <form action="db.php" method="GET">
+                <input type="hidden" name="action" value="inserisci_film">
             <p>
                 <label for="titolo">Titolo film</labe >
                 <input type="text" name="titolo" id="titolo">
@@ -34,8 +35,13 @@
             <label for="genere">Genere</label>
             <input type="text" name="genere" id="genere">
             </p>
+            <input type="submit" value="invia"></input>
+
 
             <!-- form attori -->
+
+            <form action="db.php" method="GET">
+            <input type="hidden" name="action" value="inserisci_attore">
             <p>
                 <label for="nome">Nome dell'attore</labe >
                 <input type="text" name="nomeA" id="nomeA">
@@ -44,8 +50,15 @@
             <label for="data_nascita">Data di nascita</label>
             <input type="text" name="annoA" id="annoA">
             </p>
+            <input type="submit" value="invia"></input>
 
+            </form>
+
+            
+            
              <!-- form registi -->
+             <form action="db.php" method="GET">
+             <input type="hidden" name="action" value="inserisci_regista">
              <p>
                 <label for="nome">Nome del regista</labe >
                 <input type="text" name="nomeR" id="nomeR">
