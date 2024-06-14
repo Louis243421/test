@@ -35,7 +35,9 @@
             <label for="genere">Genere</label>
             <input type="text" name="genere" id="genere">
             </p>
-            <input type="submit" value="invia"></input>
+            <input type="submit" value="invia">
+
+            </form>
 
 
             <!-- form attori -->
@@ -50,7 +52,7 @@
             <label for="data_nascita">Data di nascita</label>
             <input type="text" name="annoA" id="annoA">
             </p>
-            <input type="submit" value="invia"></input>
+            <input type="submit" value="invia">
 
             </form>
 
@@ -67,7 +69,7 @@
             <label for="data_nascita">Data di nascita</label>
             <input type="text" name="annoR" id="annoR">
             </p>
-            <input type="submit" value="invia"></input>
+            <input type="submit" value="invia">
             </form>
             
   
