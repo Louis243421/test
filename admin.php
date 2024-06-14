@@ -32,6 +32,21 @@
             </p>
             <input type="submit" value="invia"></input>
             </form>
+
+            <script>
+                var titolo = document.getElementById("titolo").value;
+                var anno = document.getElementById("annoU").value;
+                var genere = document.getElementById("genere").value;
+            </script>
+
+
+            <?php include 'db.php'; ?> 
+            <?php 
+            inserimento($titolo,$anno,$genere);
+
+
+
+            ?>
             
   
         </div>
