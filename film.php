@@ -16,17 +16,20 @@
             <div class="title"></div>
             <div id="sub_title">
             <?php include 'db.php'; ?> 
+            <div id="film">
             <?php
                 print("<strong style='font-size: 50px;'>I nostri film:</strong> <br>");
                 ricerca("titolo","film");
                 print("<br>");
+                ?>
+            </div>
                 print("<strong style='font-size: 50px;'>I nostri registi:</strong> <br>");
                 ricerca("nome","registi");
                 print("<strong style='font-size: 50px;'>I nostri attori:</strong> <br>");
                 ricerca("nome","attori"); 
 
                 $conn->close();
-            ?>
+           
         </div>
     </div>
     <?php include 'footer.html'; ?>
