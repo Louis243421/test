@@ -11,7 +11,7 @@ $dbname = "film";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 $titolo = $_REQUEST['titolo'];
-$anno =$_REQUEST['anno'];
+$anno =$_REQUEST['annoU'];
 $genere =$_REQUEST['genere'];
 
 
