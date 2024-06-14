@@ -10,9 +10,9 @@ $dbname = "film";
 // Crea la connessione
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$titolo = $conn->real_escape_string($_REQUEST['titolo']);
-$anno = $conn->real_escape_string($_REQUEST['annoU']);
-$genere = $conn->real_escape_string($_REQUEST['genere']);
+$titolo = $conn->real_escape_string($_REQUEST['$titolo']);
+$anno = $conn->real_escape_string($_REQUEST['$anno']);
+$genere = $conn->real_escape_string($_REQUEST['$genere']);
 
 $sql = "INSERT INTO film (titolo, anno_uscita, genere) VALUES('$titolo','$anno', '$genere')";
 
