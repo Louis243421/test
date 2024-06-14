@@ -17,24 +17,25 @@
             <div id="sub_title">
             <?php include 'db.php'; ?> 
 
-            <div id="film"></div>
+            <div id="film">
             <?php
                 print("<strong style='font-size: 50px;'>I nostri film:</strong> <br>");
                 ricerca("titolo","film");
 
                 ?>
+            </div>
 
-                
-               
-                <div id="registi"></div>
+                <div id="registi">
                 <?php
                 print("<strong style='font-size: 50px;'>I nostri registi:</strong>");
                 print("<br>");
                 ricerca("nome","registi");
 
                 ?>
+                </div>
 
-                <div id="attori"></div>
+
+                <div id="attori">
                 <?php
                 print("<strong style='font-size: 50px;'>I nostri attori:</strong>");
                 print("<br>");
@@ -43,6 +44,8 @@
 
                 $conn->close();
                 ?>
+                </div>
+
                 
            
         </div>
