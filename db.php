@@ -81,7 +81,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // Output dei dati di ogni riga
     while($row = $result->fetch_assoc()) {
-        echo  $row["$cosa"];
+        echo "<br>". $row["$cosa"];
     }
 } else {
     echo "0 risultati";
