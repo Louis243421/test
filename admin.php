@@ -30,6 +30,18 @@
             <label for="genere">Genere</label>
             <input type="text" name="genere" id="genere">
             </p>
+
+            <!-- form attori -->
+
+            <form action="db.php" method="GET">
+            <p>
+                <label for="nome">Nome dell'attore</labe >
+                <input type="text" name="nomeA" id="nomeA">
+            </p>
+            <p>
+            <label for="data_nascita">Data di nascita</label>
+            <input type="text" name="annoA" id="annoA">
+            </p>
             <input type="submit" value="invia"></input>
             </form>
             
