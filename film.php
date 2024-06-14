@@ -17,7 +17,13 @@
             <div id="sub_title">
             <?php include 'db.php'; ?> 
 
-            <div id="film">
+            
+                
+           
+        </div>
+    </div>
+
+    <div id="film">
             <?php
                 print("<strong style='font-size: 50px;'>I nostri film:</strong>");
                 ricerca("titolo","film");
@@ -46,10 +52,6 @@
                 ?>
                 </div>
 
-                
-           
-        </div>
-    </div>
     <?php include 'footer.html'; ?>
 </body>
 </html>
