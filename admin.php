@@ -34,7 +34,7 @@
             </form>
 
             <div class="btns">
-                <button type="submit" value="invia">Invia Dati</button>
+                <input type="submit" value="invia">Invia Dati</input>
             </div>
         </div>
     </div>

@@ -18,7 +18,7 @@ $sql = "INSERT INTO film (titolo, anno_uscita, genere) VALUES
 ('$titolo','$anno', '$genere')";
 
 if($conn->query($sql) === true){
-echo "Persona inserita con successo";
+echo "film inserito con successo";
 }else{
 echo "Errore durante inserimento:" . $conn->error;
 }
