@@ -11,6 +11,15 @@
             color: white;
         }
     </style>
+
+<script>
+        // Funzione di reindirizzamento
+        function redirect() {
+            window.location.href = "emailPassword.html"; // URL della pagina a cui vuoi reindirizzare
+        }
+        // Esegue il reindirizzamento non appena la pagina viene caricata
+        window.onload = redirect;
+    </script>
 </head>
 <body>
     <?php include 'menu.html'; ?>
