@@ -7,11 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
         .content {
             display: flex;
             justify-content: space-around;
-            align-items: flex-start; /* Allinea gli elementi in cima */
-            flex-wrap: wrap; /* Permette l'avvolgimento degli elementi */
+            align-items: flex-start;
+            flex-wrap: wrap;
             padding: 20px;
         }
         .section {
