@@ -17,7 +17,7 @@
             <div class="sub_title" style="font-size: 25px">
             Inserisci qui i nuovi elementi:
             </div>
-            <form action="db.php" method="POST">
+            <form action="db.php" method="GET">
             <p>
                 <label for="titolo">Titolo film</labe >
                 <input type="text" name="titolo" id="titolo">

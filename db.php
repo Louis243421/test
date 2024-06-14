@@ -10,7 +10,7 @@ $dbname = "film";
 // Crea la connessione
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-/*$titolo = $_REQUEST['titolo'];
+$titolo = $_REQUEST['titolo'];
 $anno =$_REQUEST['anno'];
 $genere =$_REQUEST['genere'];
 
@@ -30,7 +30,7 @@ function inserimento($titolo,$anno,$genere)
     if ($conn->connect_error) {
         die("Connessione fallita: " . $conn->connect_error);
     }
-}*/
+}
 
 echo "<pre>";
 print_r($_REQUEST);
