@@ -8,7 +8,14 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <style>
-    body {
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -16,7 +23,7 @@
 
 .content {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
     padding: 20px;
@@ -37,6 +44,7 @@
     flex: 1 1 300px;
     margin: 10px;
     padding: 20px;
+    border: 1px solid #ccc;
     text-align: center;
 }
 
@@ -44,11 +52,19 @@
     font-size: 24px;
 }
 
+
 </style>
 </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gino's Studios</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
 <body>
-
-
     <?php include 'menu.html'; ?>
     <div class="content">
         <div class="img"></div>
@@ -58,20 +74,20 @@
                 <?php include 'db.php'; ?> 
                 <div id="film">
                     <?php
-                        print("<strong style='font-size: 50px;'>I nostri film:</strong> <br>");
-                        ricerca("titolo","film");
+                        print("<strong style='font-size: 24px;'>I nostri film:</strong> <br>");
+                        ricerca("titolo", "film");
                     ?>
                 </div>
                 <div id="registi">
                     <?php
-                        print("<strong style='font-size: 50px;'>I nostri registi:</strong> <br>");
-                        ricerca("nome","registi");
+                        print("<strong style='font-size: 24px;'>I nostri registi:</strong> <br>");
+                        ricerca("nome", "registi");
                     ?>
                 </div>
                 <div id="attori">
                     <?php
-                        print("<strong style='font-size: 50px;'>I nostri attori:</strong> <br>");
-                        ricerca("nome","attori"); 
+                        print("<strong style='font-size: 24px;'>I nostri attori:</strong> <br>");
+                        ricerca("nome", "attori"); 
                         $conn->close();
                     ?>
                 </div>
@@ -81,3 +97,4 @@
     <?php include 'footer.html'; ?>
 </body>
 </html>
+
