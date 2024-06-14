@@ -44,10 +44,6 @@
             <label for="data_nascita">Data di nascita</label>
             <input type="text" name="annoA" id="annoA">
             </p>
-            <input type="submit" value="invia"></input>
-
-
-
 
              <!-- form registi -->
              <p>
