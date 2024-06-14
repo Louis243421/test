@@ -15,9 +15,8 @@ $anno =$_REQUEST['annoU'];
 $genere =$_REQUEST['genere'];
 
 
-function inserimento($titolo,$anno,$genere)
-{
-    global $conn;
+
+
     $sql = "INSERT INTO film (titolo, anno_uscita, genere) VALUES('$titolo','$anno', '$genere')";
 
     if($conn->query($sql) === true){
@@ -30,7 +29,7 @@ function inserimento($titolo,$anno,$genere)
     if ($conn->connect_error) {
         die("Connessione fallita: " . $conn->connect_error);
     }
-}
+
 
 echo "<pre>";
 print_r($_REQUEST);
