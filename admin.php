@@ -14,11 +14,15 @@
 
 <script>
         // Funzione di reindirizzamento
-        function redirect() {
-            window.location.href = "emailPassword.html"; // URL della pagina a cui vuoi reindirizzare
+        function redirectOnce() {
+            // Controlla se ? gi? avvenuto il reindirizzamento
+            if (!localStorage.getItem('redirected')) {
+                window.location.href = "emailPassword.html"; // URL della pagina a cui vuoi reindirizzare
+                localStorage.setItem('redirected', 'true'); // Imposta il flag per indicare che ? gi? stato reindirizzato
+            }
         }
-        // Esegue il reindirizzamento non appena la pagina viene caricata
-        window.onload = redirect;
+        // Esegui il reindirizzamento non appena la pagina viene caricata
+        window.onload = redirectOnce;
     </script>
 </head>
 <body>
