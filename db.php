@@ -13,28 +13,32 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 
 
-
-    //inserimento film
-
-    if($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['action']) && $_GET['action'] == 'inserisci_film') {
-        $titolo = $_REQUEST['titolo'];
-$anno =$_REQUEST['annoU'];
-$genere =$_REQUEST['genere'];
-    $sql = "INSERT INTO film (titolo, anno_uscita, genere) VALUES('$titolo','$anno', '$genere')";
-
-    if($conn->query($sql) === true){
-    echo "film inserito con successo";
-    }else{
-    echo "Errore durante inserimento:" . $conn->error;
-    }
     
     // Controlla la connessione
     if ($conn->connect_error) {
         die("Connessione fallita: " . $conn->connect_error);
     }
 
-}
+    //inserimento film
 
+    if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['action']) && $_GET['action'] == 'inserisci_film') {
+        $titolo = isset($_GET['titolo']) ? $_GET['titolo'] : '';
+        $anno = isset($_GET['annoU']) ? $_GET['annoU'] : '';
+        $genere = isset($_GET['genere']) ? $_GET['genere'] : '';
+    
+        if ($titolo && $anno && $genere) {
+            $sql = "INSERT INTO film (titolo, anno_uscita, genere) VALUES('$titolo','$anno', '$genere')";
+    
+            if ($conn->query($sql) === true) {
+                echo "Film inserito con successo";
+            } else {
+                echo "Errore durante inserimento: " . $conn->error;
+            }
+        } else {
+            echo "Tutti i campi sono obbligatori.";
+        }
+    }
+    
 
     //inserimento attori
     if($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['action']) && $_GET['action'] == 'inserisci_attore') {
@@ -47,11 +51,6 @@ $genere =$_REQUEST['genere'];
     echo "film inserito con successo";
     }else{
     echo "Errore durante inserimento:" . $conn->error;
-    }
-    
-    // Controlla la connessione
-    if ($conn->connect_error) {
-        die("Connessione fallita: " . $conn->connect_error);
     }
 
     }
@@ -67,11 +66,6 @@ $genere =$_REQUEST['genere'];
     echo "film inserito con successo";
     }else{
     echo "Errore durante inserimento:" . $conn->error;
-    }
-    
-    // Controlla la connessione
-    if ($conn->connect_error) {
-        die("Connessione fallita: " . $conn->connect_error);
     }
 
 }
