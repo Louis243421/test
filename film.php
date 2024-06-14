@@ -8,32 +8,14 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
     <style>
-        /* Reset CSS */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
-.content {
+#sub_title {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     flex-wrap: wrap;
-    padding: 20px;
 }
-
-.center {
-    width: 100%;
-}
-
-
 
 
     </style>
