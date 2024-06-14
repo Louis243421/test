@@ -19,7 +19,7 @@
 
             <?php
                 print("<strong style='font-size: 50px;'>I nostri film:</strong>");
-                print("<br>");
+
                 ricerca("titolo","film");
                 
                
