@@ -19,13 +19,17 @@
 
             <?php
                 print("<strong style='font-size: 50px;'>I nostri film:</strong> <br>");
-                ricerca("titolo","film");
                 print("<br>");
+                ricerca("titolo","film");
+                
                
 
-                print("<strong style='font-size: 50px;'>I nostri registi:</strong> <br>");
+                print("<strong style='font-size: 50px;'>I nostri registi:</strong> ");
+                print("<br>");
                 ricerca("nome","registi");
-                print("<strong style='font-size: 50px;'>I nostri attori:</strong> <br>");
+
+                print("<strong style='font-size: 50px;'>I nostri attori:</strong> ");
+                print("<br>");
                 ricerca("nome","attori"); 
 
                 $conn->close();
