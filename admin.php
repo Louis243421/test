@@ -18,24 +18,24 @@
             Inserisci qui i nuovi elementi:
             </div>
 
-<form action="db.php" method="POST">
-<p>
-    <label for="titolo">Titolo film</labe >
-    <input type="text" name="titolo" id="titolo">
-</p>
-<p>
-<label for="attori">Anno di uscita</label>
-<input type="text" name="annoU" id="annoU">
-</p>
-<p>
-<label for="genere">Genere</label>
-<input type="text" name="genere" id="genere">
-</p>
-</form>
+            <form action="db.php" method="POST">
+            <p>
+                <label for="titolo">Titolo film</labe >
+                <input type="text" name="titolo" id="titolo">
+            </p>
+            <p>
+            <label for="attori">Anno di uscita</label>
+            <input type="text" name="annoU" id="annoU">
+            </p>
+            <p>
+            <label for="genere">Genere</label>
+            <input type="text" name="genere" id="genere">
+            </p>
+            </form>
 
-            <div> class="btns">
-                <button onclick="window.location.href='about.php'">Invia Dati</button>
-            </di>
+            <div class="btns">
+                <button type="submit" value="invia">Invia Dati</button>
+            </div>
         </div>
     </div>
     <?php include 'footer.html'; ?>

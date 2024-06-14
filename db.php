@@ -10,6 +10,19 @@ $dbname = "film";
 // Crea la connessione
 $conn = new mysqli($servername, $username, $password, $dbname);
 
+$titolo = $conn->real_escape_string($_REQUEST['titolo']);
+$anno = $conn->real_escape_string($_REQUEST['anno']);
+$genere = $conn->real_escape_string($_REQUEST['genere']);
+
+$sql = "INSERT INTO film (titolo, anno_uscita, genere) VALUES
+('$titolo','$anno', '$genere')";
+
+if($conn->query($sql) === true){
+echo "Persona inserita con successo";
+}else{
+echo "Errore durante inserimento:" . $conn->error;
+}
+
 // Controlla la connessione
 if ($conn->connect_error) {
     die("Connessione fallita: " . $conn->connect_error);
