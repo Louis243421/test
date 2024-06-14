@@ -152,38 +152,16 @@ body, html {
   font-size: 100%;
   color: #fff;
  }
- #film{
-  position: absolute;
-  top: 52%;
-  left: 20%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  padding: 0 20px;
+ #film, #registi, #attori {
+  flex: 1 1 300px;
+  margin: 10px;
+  padding: 20px;
   text-align: center;
+}
 
- }
-
- #registi{
-  position: absolute;
-  top: 52%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  padding: 0 20px;
-  text-align: center;
-
- }
-
- #attori{
-  position: absolute;
-  top: 52%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  padding: 0 20px;
-  text-align: center;
-
- }
+#film strong, #registi strong, #attori strong {
+  font-size: 24px;
+}
  
 
 
