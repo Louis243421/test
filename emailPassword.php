@@ -43,9 +43,9 @@
             <input type="password" id="password" name="password">
         </p>
         <div class="btns">
-        <p>
+
             <input type="submit" value="Invia">
-        </p>
+
         </div>
     </form>
                 </div>
