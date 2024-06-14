@@ -24,6 +24,8 @@
                 ricerca("nome","registi");
                 print("<strong style='font-size: 50px;'>I nostri attori:</strong> <br>");
                 ricerca("nome","attori"); 
+
+                $conn->close();
             ?>
         </div>
     </div>
