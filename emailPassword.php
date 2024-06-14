@@ -42,14 +42,14 @@
             <label for="password">Password:</label>
             <input type="password" id="password" name="password">
         </p>
+        <div class="btns">
         <p>
             <input type="submit" value="Invia">
         </p>
+        </div>
     </form>
                 </div>
-            <div class="btns">
-                <button onclick="window.location.href='about.php'">Learn More</button>
-            </div>
+           
         </div>
     </div>
     <?php include 'footer.html'; ?>
