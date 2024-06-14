@@ -31,11 +31,10 @@
             <label for="genere">Genere</label>
             <input type="text" name="genere" id="genere">
             </p>
+            <input type="submit" value="invia"></input>
             </form>
-
-            <div class="btns">
-                <input type="submit" value="invia">Invia Dati</input>
-            </div>
+            
+  
         </div>
     </div>
     <?php include 'footer.html'; ?>
