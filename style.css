@@ -84,8 +84,8 @@ footer{
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  padding: 0 20px;
-  text-align: left;
+  padding: 0 40px;
+  text-align: center;
 }
 .center .title {
   color: #fff;
