@@ -19,7 +19,7 @@
 
             <div id="film">
             <?php
-                print("<strong style='font-size: 50px;'>I nostri film:</strong> <br>");
+                print("<strong style='font-size: 50px;'>I nostri film:</strong>");
                 ricerca("titolo","film");
 
                 ?>
@@ -28,7 +28,7 @@
                 <div id="registi">
                 <?php
                 print("<strong style='font-size: 50px;'>I nostri registi:</strong>");
-                print("<br>");
+
                 ricerca("nome","registi");
 
                 ?>
@@ -38,7 +38,7 @@
                 <div id="attori">
                 <?php
                 print("<strong style='font-size: 50px;'>I nostri attori:</strong>");
-                print("<br>");
+
                 ricerca("nome","attori"); 
           
 
