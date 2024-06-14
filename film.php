@@ -37,7 +37,6 @@
     flex: 1 1 300px;
     margin: 10px;
     padding: 20px;
-    border: 1px solid #ccc;
     text-align: center;
 }
 
