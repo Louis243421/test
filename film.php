@@ -9,24 +9,23 @@
 </head>
 <body>
     <?php include 'menu.html'; ?>
-        <div id="film">
+
             <?php
                 print("<strong>I nostri film:</strong><br>");
                 ricerca("titolo","film");
             ?>
-        </div>
-        <div id="registi">
+
+
             <?php
                 print("<strong>I nostri registi:</strong><br>");
                 ricerca("nome","registi");
             ?>
-        </div>
-        <div id="attori">
+
             <?php
                 print("<strong>I nostri attori:</strong><br>");
                 ricerca("nome","attori");
             ?>
-        </div>
+
 
     <?php include 'footer.html'; ?>
 </body>
