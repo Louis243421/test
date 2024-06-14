@@ -10,15 +10,16 @@ $dbname = "film";
 // Crea la connessione
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$titolo = $_REQUEST['titolo'];
-$anno =$_REQUEST['annoU'];
-$genere =$_REQUEST['genere'];
+
 
 
 
     //inserimento film
 
     if($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['action']) && $_GET['action'] == 'inserisci_film') {
+        $titolo = $_REQUEST['titolo'];
+$anno =$_REQUEST['annoU'];
+$genere =$_REQUEST['genere'];
     $sql = "INSERT INTO film (titolo, anno_uscita, genere) VALUES('$titolo','$anno', '$genere')";
 
     if($conn->query($sql) === true){
@@ -75,11 +76,6 @@ $genere =$_REQUEST['genere'];
 
 }
 
-
-
-echo "<pre>";
-print_r($_REQUEST);
-echo "</pre>";
 
 
 
