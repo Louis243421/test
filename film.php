@@ -18,18 +18,18 @@
             <?php include 'db.php'; ?> 
 
             <?php
-                print("<strong style='font-size: 50px;'>I nostri film:</strong> <br>");
-                print("<br>");
+                print("<strong style='font-size: 50px;'>I nostri film:</strong>");
+   
                 ricerca("titolo","film");
                 
                
 
-                print("<strong style='font-size: 50px;'>I nostri registi:</strong> ");
-                print("<br>");
+                print("<strong style='font-size: 50px;'>I nostri registi:</strong>");
+
                 ricerca("nome","registi");
 
-                print("<strong style='font-size: 50px;'>I nostri attori:</strong> ");
-                print("<br>");
+                print("<strong style='font-size: 50px;'>I nostri attori:</strong>");
+
                 ricerca("nome","attori"); 
 
                 $conn->close();
