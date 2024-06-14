@@ -25,9 +25,13 @@
     </script>
 </head>
 <body>
-
-
-    <form id="loginForm" onsubmit="inviaDati(event);">
+<?php include 'menu.html'; ?>
+    <div class="content">
+        <div class="img"></div>
+        <div class="center">
+            <div class="title">Pagina di Login</div>
+            <div class="sub_title" style="font-size: 25px">
+            <form id="loginForm" onsubmit="inviaDati(event);">
         <p>
             <label for="email">Email:</label>
             <input type="text" id="email" name="email">
@@ -40,5 +44,14 @@
             <input type="submit" value="Invia">
         </p>
     </form>
+                </div>
+            <div class="btns">
+                <button onclick="window.location.href='about.php'">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <?php include 'footer.html'; ?>
+
+    
 </body>
 </html>
