@@ -25,15 +25,15 @@
                 <input type="hidden" name="action" value="inserisci_film">
             <p>
                 <label for="titolo">Titolo film</labe >
-                <input type="text" name="titolo" id="titolo">
+                <input type="text" name="titolo" id="titolo" required>
             </p>
             <p>
             <label for="attori">Anno di uscita</label>
-            <input type="text" name="annoU" id="annoU">
+            <input type="text" name="annoU" id="annoU" required>
             </p>
             <p>
             <label for="genere">Genere</label>
-            <input type="text" name="genere" id="genere">
+            <input type="text" name="genere" id="genere" required>
             </p>
             <input type="submit" value="invia">
 
@@ -46,11 +46,11 @@
             <input type="hidden" name="action" value="inserisci_attore">
             <p>
                 <label for="nome">Nome dell'attore</labe >
-                <input type="text" name="nomeA" id="nomeA">
+                <input type="text" name="nomeA" id="nomeA" required>
             </p>
             <p>
             <label for="data_nascita">Data di nascita</label>
-            <input type="text" name="annoA" id="annoA">
+            <input type="date" name="annoA" id="annoA" required>
             </p>
             <input type="submit" value="invia">
 
@@ -63,13 +63,13 @@
              <input type="hidden" name="action" value="inserisci_regista">
              <p>
                 <label for="nome">Nome del regista</labe >
-                <input type="text" name="nomeR" id="nomeR">
+                <input type="text" name="nomeR" id="nomeR" required>
             </p>
             <p>
             <label for="data_nascita">Data di nascita</label>
-            <input type="text" name="annoR" id="annoR">
+            <input type="date" name="annoR" id="annoR" required>
             </p>
-            <input type="submit" value="invia">
+            <input type="submit" value="invia" >
             </form>
             
   
