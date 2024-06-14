@@ -16,7 +16,7 @@ $genere =$_REQUEST['genere'];
 
 
 
-
+    //inserimento film
     $sql = "INSERT INTO film (titolo, anno_uscita, genere) VALUES('$titolo','$anno', '$genere')";
 
     if($conn->query($sql) === true){
@@ -31,10 +31,29 @@ $genere =$_REQUEST['genere'];
     }
 
 
+    //inserimento attori
     $nomeA = $_REQUEST['nomeA'];
-    $annoN =$_REQUEST['annoA'];
+    $annoA =$_REQUEST['annoA'];
 
     $sql = "INSERT INTO attori (nome, data_nascita) VALUES('$nomeA','$annoA')";
+
+    if($conn->query($sql) === true){
+    echo "film inserito con successo";
+    }else{
+    echo "Errore durante inserimento:" . $conn->error;
+    }
+    
+    // Controlla la connessione
+    if ($conn->connect_error) {
+        die("Connessione fallita: " . $conn->connect_error);
+    }
+
+    //inserimento registi
+
+    $nomeR = $_REQUEST['nomeR'];
+    $annoR =$_REQUEST['annoR'];
+
+    $sql = "INSERT INTO registi (nome, data_nascita) VALUES('$nomeR','$annoR')";
 
     if($conn->query($sql) === true){
     echo "film inserito con successo";

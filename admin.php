@@ -6,7 +6,11 @@
     <title>Gino's Studios</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    
+    <style>
+        label {
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <?php include 'menu.html'; ?>
@@ -32,8 +36,6 @@
             </p>
 
             <!-- form attori -->
-
-            <form action="db.php" method="GET">
             <p>
                 <label for="nome">Nome dell'attore</labe >
                 <input type="text" name="nomeA" id="nomeA">
@@ -41,6 +43,20 @@
             <p>
             <label for="data_nascita">Data di nascita</label>
             <input type="text" name="annoA" id="annoA">
+            </p>
+            <input type="submit" value="invia"></input>
+
+
+
+
+             <!-- form registi -->
+             <p>
+                <label for="nome">Nome del regista</labe >
+                <input type="text" name="nomeR" id="nomeR">
+            </p>
+            <p>
+            <label for="data_nascita">Data di nascita</label>
+            <input type="text" name="annoR" id="annoR">
             </p>
             <input type="submit" value="invia"></input>
             </form>
