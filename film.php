@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
+    <style>
+        /* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+    </style>
 </head>
 <body>
     <?php include 'menu.html'; ?>
