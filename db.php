@@ -10,9 +10,9 @@ $dbname = "film";
 // Crea la connessione
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-$titolo = $_POST['titolo'];
-$anno =$_POST['anno'];
-$genere =$_POST['genere'];
+$titolo = $_REQUEST['titolo'];
+$anno =$_REQUEST['anno'];
+$genere =$_REQUEST['genere'];
 
 
 function inserimento($titolo,$anno,$genere)
