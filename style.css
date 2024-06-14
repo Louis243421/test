@@ -140,12 +140,10 @@ body, html {
   justify-content: center;
   align-items: center;
  }
- #sub_title {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
+ #sub_title{
+  font-size: 135%;
+  color: #fff;
+ }
  h3{
   font-size: 150%;
   color: #fff;

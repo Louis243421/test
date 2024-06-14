@@ -33,6 +33,14 @@ body {
     width: 100%;
 }
 
+#sub_title {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
     </style>
 </head>
 <body>
